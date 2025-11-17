@@ -20,8 +20,3 @@ class CargadorDatos:
         total_celdas = self.dataframe.size
         self.porcentaje_nulos = (total_nulos / total_celdas) * 100
         return self.dataframe
-
-        print("✅ Archivo cargado.")
-        print(f"➡️ Filas: {self.num_filas}")
-        print(f"➡️ Total de valores nulos: {total_nulos}")
-        print(f"➡️ Porcentaje de nulos: {self.porcentaje_nulos:.2f}%")
