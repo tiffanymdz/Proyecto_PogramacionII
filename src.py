@@ -25,16 +25,18 @@ print("🔗 Correlaciones relevantes:")
 print(procesador.correlaciones_especificas())
 print("-" * 60)
 
-print("🔍 Detectando outliers en Goals:")
+ Visualizaciones
+print(" Detectando outliers en Goals:")
 outliers_goals = procesador.detectar_outliers("Goals")
 print(f"Se encontraron {len(outliers_goals)} outliers en Goals")
 print(outliers_goals[["Player", "Team", "Goals"]].head())
 print("-" * 60)
 
+main
 df_limpio.to_csv(r"C:\Users\tiffa\OneDrive\Desktop\Big Data\Programación II\premier_limpio.csv", index=False)
-print("✅ Dataset limpio guardado como 'premier_limpio.csv'")
+print(" Dataset limpio guardado como 'premier_limpio.csv'")
 
-# 3️⃣ Modelado POO de los jugadores y equipos
+# 3️⃣Modelado POO de los jugadores y equipos
 
 jugadores = []
 for _, row in df_limpio.iterrows():
@@ -53,21 +55,21 @@ for j in jugadores:
     if j.team == "Manchester United":
         equipo_mu.agregar_jugador(j)
 
-print("📌 Total goles MU:", equipo_mu.total_goles())
-print("📌 Total asistencias MU:", equipo_mu.total_assists())
+print(" Total goles MU:", equipo_mu.total_goles())
+print(" Total asistencias MU:", equipo_mu.total_assists())
 
 equipo_ful = Equipo("Fulham")
 for j in jugadores:
     if j.team == "Fulham":
         equipo_ful.agregar_jugador(j)
 
-print("📌 Total goles FUL :", equipo_ful.total_goles())
-print("📌 Total asistencias FUL:", equipo_ful.total_assists())
+print(" Total goles FUL :", equipo_ful.total_goles())
+print(" Total asistencias FUL:", equipo_ful.total_assists())
 
 equipo_liv = Equipo("Liverpool")
 for j in jugadores:
     if j.team == "Liverpool":
         equipo_liv.agregar_jugador(j)
 
-print("📌 Total goles LIV:", equipo_liv.total_goles())
-print("📌 Total asistencias LIV:", equipo_liv.total_assists())
+print(" Total goles LIV:", equipo_liv.total_goles())
+print(" Total asistencias LIV:", equipo_liv.total_assists())
