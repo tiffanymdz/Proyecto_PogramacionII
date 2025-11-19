@@ -1,8 +1,7 @@
 # Proyecto_PogramacionII
 
 Premier League Insights ⚽
- Proyecto universitario de análisis de datos de la Premier League 2024/2025 utilizando Programación Orientada
- a Objetos en Python.
+ Proyecto universitario de análisis de datos de la Premier League 2024/2025 utilizando Programación Orientada a Objetos en Python.
 
  ⚽ Información del dataset
  nombre: Premier League - Player Stats Season - 24/25
@@ -84,23 +83,27 @@ Premier League Insights ⚽
  Cada visualización incluye datos estadísticos y una mini-historia que explica el insight:
  
  scatter()
+ 
  Tipo: Gráfico de dispersión
  Variables: Expected Goals (xG) vs Goals
  Historia: Identifica jugadores/equipos sobre-performing o bajo-performing
  Estadísticas mostradas: Correlación, máximo, mínimo y media de xG
  
  histograma()
+ 
  Tipo: Histograma con curva KDE
  Variable: Goals
  Historia: Muestra que la mayoría de observaciones tienen 0 goles (eventos poco frecuentes)
  Estadísticas mostradas: Máximo, mediana, mínimo
  
  correlaciones()
+ 
  Tipo: Gráfico de barras horizontal
  Variables: Tres pares de correlaciones clave
  Historia: xG es el mejor predictor de Goals, mientras que Assists aporta poco
  
  heatmap()
+ 
  Tipo: Mapa de calor
  Variables: Matriz de correlaciones entre métricas ofensivas
  Historia: Dribbles y Carries moderadamente relacionados; Assists-ProgPasses sorprendentemente débil
@@ -125,7 +128,7 @@ jugadores: Lista de objetos Jugador
 
 Métodos: 
 agregar_jugador(jugador): Añade un jugador al equipo
-total_golrd(): Calcula suma de goles del equipo
+total_goles(): Calcula suma de goles del equipo
 total_assits(): Calcula suma de asistencias del equipo
 
 📊 Análisis Realizados
