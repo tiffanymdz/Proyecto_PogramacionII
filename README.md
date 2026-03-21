@@ -1,4 +1,4 @@
-# Proyecto_PogramacionII
+# Premier_League_Insights
 
 Premier League Insights ⚽
  Proyecto universitario de análisis de datos de la Premier League 2024/2025 utilizando Programación Orientada a Objetos en Python.
